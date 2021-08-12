@@ -3,11 +3,12 @@
 }
 .thanks-main-container {
     max-width: 500px;
+    width: 100%;
     margin: 0 auto;
     min-height: 100vh;
     position: fixed;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0;
     top: 0;
     overflow-y: auto;
@@ -17,7 +18,7 @@
         background: #F2F2F2;
         .thanks-block {
             transition: background-color .3s ease-out,border-color .3s ease-out;
-            background-color: var(--hoverColor,#f2f2f2);
+            background-color: #f2f2f2;
             border-color: transparent;
             &::before {
                 -webkit-transition: -webkit-transform .4s .3s ease-out;
@@ -56,7 +57,7 @@
         max-width: 350px;
         background: #fff;
         transition: background-color .3s .4s ease-out, border-color .3s .4s ease-out;
-        background-color: var(--backgroundColor,#fff);
+        background-color: #fff;
         position: relative;
         overflow: hidden;
         &::before {
@@ -79,7 +80,7 @@
             -ms-transform-origin: 0 0;
             transform-origin: 0 0;
             content: '';
-            background-color: var(--backgroundColor,#fff);
+            background-color: #fff;
         }
         .top-text {
             font-family: Arial;
